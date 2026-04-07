@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamzid Rahman | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/Logo/favicon.svg" />
+    <style>
+      * {
+        font-family: serif, "Times New Roman", Times;
+        color: rgb(210, 220, 255);
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(13, 11, 28);
+      }
+      a {
+        text-decoration: none;
+      }
+
+      nav {
+        background-color: rgba(8, 6, 20, 0.5);
+        backdrop-filter: blur(10px) saturate(150%);
+        border-bottom: 1px solid rgb(0, 229, 255);
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        width: 130px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        letter-spacing: 0.1em;
+        font-size: 1.3em;
+        text-decoration: none;
+        color: rgb(210, 220, 255);
+      }
+      .nav-links a:hover {
+        color: rgb(0, 229, 255);
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 999px;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 900px;
+      }
+      section {
+        padding: 5rem 0;
+        border-bottom: 1px solid rgb(0, 229, 255);
+      }
+      #starting {
+        align-items: center;
+        min-height: 80vh;
+        padding-top: 20vh;
+      }
+      #starting .container {
+        max-width: 600px;
+      }
+
+      .status {
+        letter-spacing: 0.15em;
+        color: rgb(0, 229, 255);
+      }
+      .name1 {
+        font-size: 5em;
+      }
+      .name2 {
+        font-size: 5em;
+        color: rgb(0, 184, 205);
+      }
+      .desc1 {
+        color: rgb(44, 84, 89);
+        padding-bottom: 20px;
+      }
+      .desc2 s {
+        color: grey;
+      }
+      .title {
+        padding-bottom: 100px;
+        letter-spacing: 10%;
+      }
+      #about .left img {
+        width: 250px;
+        padding-bottom: 20px;
+      }
+      .wholeGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+      }
+      #about .right {
+        border-left: 1px solid;
+        padding-left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      #about .about-row {
+        padding: 2.5em;
+      }
+      #skills h2 {
+        text-align: center;
+        padding: 10px;
+      }
+      #skills .skill-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+      }
+
+      #skills .skill-row {
+        border: 3px solid rgb(73, 73, 73);
+        border-radius: 5%;
+        justify-self: center;
+        text-align: center;
+        padding: 2em;
+      }
+      #skills .skill-row:hover {
+        border: 3px solid rgb(0, 229, 255);
+      }
+      #skills .skill-row img {
+        width: 200px;
+      }
+      #skills a {
+        text-decoration: none;
+      }
+      #skills h3 {
+        text-align: start;
+        padding: 3em;
+      }
+      #skills .CP,
+      .chess {
+        display: flex;
+      }
+      .button {
+        border: 1px solid;
+        border-radius: 5%;
+        padding: 2em;
+        margin-right: 10px;
+      }
+      .button:hover {
+        background: rgb(0, 229, 255);
+        color: black;
+      }
+
+      #contact .button {
+        display: inline flow-root;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      #contact .right {
+        display: grid;
+      }
+      .Contact_Items img {
+        width: 50px;
+      }
+      .Contact_Items {
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        padding: 5px;
+        gap: 1.5em;
+      }
+      footer p {
+        margin: 30px;
+        justify-content: center;
+        text-align: center;
+        color: grey;
+      }
+      footer a {
+        color: rgb(0, 229, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navigation" class="container">
+        <span><img src="assets/Logo/logo.svg" alt="logo" class="logo" /></span>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills </a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="starting">
+        <div class="container">
+          <div class="status">-Available for opportunities</div>
+          <div>
+            <h1 class="name1">Tamzid</h1>
+            <h1 class="name2">Rahman</h1>
+          </div>
+          <p class="desc1">
+            CSE Student - Tech Enthusiast - Competitive Programmer
+          </p>
+          <p class="desc2">
+            Learning things as I stumble and break things. Interested in various
+            fields <s>because I suffer from Shiny Object Syndrome</s> as my
+            curious mind leads me to.
+          </p>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h1 class="title">About Me</h1>
+          <div class="wholeGrid">
+            <div class="left">
+              <img src="assets/MyPhotos/CircleProfile.png" alt="" />
+              <p class="desc">
+                Im a Computer Science and Engineering Student and im intended to
+                pursue my career in Cybersecurity and im also looking forward
+                for Game Development. Doing Competitive Programming for fun
+              </p>
+            </div>
+            <div class="right">
+              <div class="about-row">
+                <h1>100+</h1>
+                <p>Problem solved in CodeForces</p>
+              </div>
+              <div class="about-row">
+                <h1>3</h1>
+                <p>Language fluent</p>
+              </div>
+              <div class="about-row">
+                <h1>2</h1>
+                <p>Projects running</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h1 class="title">Skills</h1>
+          <h2>Language Proficiency</h2>
+          <div class="skill-grid">
+            <div class="skill-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                alt=""
+              />
+              <p>Proficiency - Intermediate</p>
+              <p>Work - This Portfolio itself</p>
+            </div>
+            <div class="skill-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                alt=""
+              />
+              <p>Proficiency - Intermediate</p>
+              <p>Work - This Portfolio itself</p>
+            </div>
+            <div class="skill-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt=""
+              />
+              <p>JavaScript - Beginner</p>
+              <p>Work - This Portfolio itself</p>
+            </div>
+            <a
+              href="https://github.com/Tamzid-Rahman75/CodeForce_Problem_Solving.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="skill-row">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+                  alt=""
+                />
+                <p>Proficiency - Intermediate</p>
+                <p>Work - Click to see solved problems in Github</p>
+              </div>
+            </a>
+            <div class="skill-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                alt=""
+              />
+              <p>Proficiency - Beginner</p>
+              <p>Work - Basics only</p>
+            </div>
+            <div class="skill-row">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                alt=""
+              />
+              <p>Proficiency - Beginner</p>
+              <p>Work - Starting for Competitive Programming</p>
+            </div>
+          </div>
+          <h2>Achievement and Extras</h2>
+          <div class="extras">
+            <h3>Competitive Programming</h3>
+            <div class="CP">
+              <a
+                href="https://codeforces.com/profile/Tamzid_Rahman"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button">CodeForces Account</div>
+              </a>
+              <a
+                href="assets/Achievements/BUCC25BBP246ZVE.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button">Achievements</div>
+              </a>
+            </div>
+            <h3>Chess</h3>
+            <div class="chess">
+              <a
+                href="https://www.chess.com/member/not_tamzid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button">Chess.com Account</div>
+              </a>
+              <a
+                href="assets/Achievements/Tamzid Rahman Antor.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button">Achievements</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <h1 class="title">Projects</h1>
+          <p>Unfortunately, no project has been completed yet. Coming soon</p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h1 class="title">Contact Me</h1>
+          <div class="wholeGrid">
+            <div class="left">
+              <p>
+                Whether its for internship, work, collaboration or just a
+                friendly conversation, im up for it. Feel free to reach out
+              </p>
+              <a
+                href="mailto:wannabeawesome575@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="button">Send Email</div>
+              </a>
+            </div>
+            <div class="right">
+              <a
+                href="https://www.facebook.com/share/1NQsPksGdC/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="Contact_Items">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg"
+                    alt=""
+                  />Facebook
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/not_tamzid?igsh=cDJkbmZiZWE5endz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="Contact_Items">
+                  <img src="assets/Logo/insta-icon.svg" alt="" />Instagram
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tamzid-rahman-antor-116038378/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="Contact_Items">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    alt=""
+                  />Linkedin
+                </div>
+              </a>
+              <a
+                href="https://github.com/Tamzid-Rahman75"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="Contact_Items">
+                  <img src="assets/Logo/github-icon.svg" alt="" />Github
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Built by me. Source code on
+        <a href="https://github.com/Tamzid-Rahman75">Github</a>
+      </p>
+    </footer>
+  </body>
+</html>
